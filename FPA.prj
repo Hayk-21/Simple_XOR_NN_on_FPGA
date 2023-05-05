@@ -1,0 +1,8 @@
+verilog work "Floating_Point_Multiplier.v"
+verilog work "Floating_Point_Power.v"
+verilog work "Floating_Point_Adder.v"
+verilog work "Floating_Point_Exponent.v"
+verilog work "Floating_Point_Div.v"
+verilog work "Floating_Point_Sigmoid.v"
+verilog work "forward.v"
+verilog work "FPA.v"

@@ -1,0 +1,8 @@
+Release 14.4 Drc P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Tue Apr 11 14:36:58 2023
+
+drc -z Floating_Point_Exp.ncd Floating_Point_Exp.pcf
+
+DRC detected 0 errors and 0 warnings.

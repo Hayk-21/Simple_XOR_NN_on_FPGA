@@ -1,0 +1,39 @@
+NET "clk"            LOC = "V10" | IOSTANDARD = "LVCMOS33";   #Bank = 2, pin name = IO_L30N_GCLK0_USERCCLK,            Sch name = GCLK
+Net "clk" TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;
+NET "clk" CLOCK_DEDICATED_ROUTE = FALSE;
+
+
+NET "pin_1" LOC = "T10";
+NET "pin_2" LOC = "T9";
+
+//NET "led_1" LOC = "U16";
+//NET "led_2" LOC = "V16";
+
+//NET "clk" LOC = "E3";
+
+#NET "seg[0]" LOC = "L14";
+#NET "seg[1]" LOC = "N14";
+#NET "seg[2]" LOC = "M14";
+#NET "seg[3]" LOC = "U18";
+#NET "seg[4]" LOC = "U17";
+#NET "seg[5]" LOC = "T18";
+#NET "seg[6]" LOC = "T17";
+#NET "an[0]" LOC = "N16";
+#NET "an[1]" LOC = "N15";
+#NET "an[2]" LOC = "P18";
+#NET "an[3]" LOC = "P17";
+
+
+## Leds
+NET "led<0>"         LOC = "U16" | IOSTANDARD = "LVCMOS33";   #Bank = 2, Pin name = IO_L2P_CMPCLK,                     Sch name = LD0
+NET "led<1>"         LOC = "V16" | IOSTANDARD = "LVCMOS33";   #Bank = 2, Pin name = IO_L2N_CMPMOSI,                    Sch name = LD1
+NET "led<2>"         LOC = "U15" | IOSTANDARD = "LVCMOS33";   #Bank = 2, Pin name = IO_L5P,                            Sch name = LD2
+NET "led<3>"         LOC = "V15" | IOSTANDARD = "LVCMOS33";   #Bank = 2, Pin name = IO_L5N,                            Sch name = LD3
+NET "led<4>"         LOC = "M11" | IOSTANDARD = "LVCMOS33";   #Bank = 2, Pin name = IO_L15P,                           Sch name = LD4
+NET "led<5>"         LOC = "N11" | IOSTANDARD = "LVCMOS33";   #Bank = 2, Pin name = IO_L15N,                           Sch name = LD5
+NET "led<6>"         LOC = "R11" | IOSTANDARD = "LVCMOS33";   #Bank = 2, Pin name = IO_L16P,                           Sch name = LD6
+NET "led<7>"         LOC = "T11" | IOSTANDARD = "LVCMOS33";   #Bank = 2, Pin name = IO_L16N_VREF,                      Sch name = LD7
+
+
+#NET "result"         LOC = "U16" | IOSTANDARD = "LVCMOS33";   #Bank = 2, Pin name = IO_L2P_CMPCLK,                     Sch name = LD0

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/User/Documents/FPGA/FPA/Floating_Point_Sigmoid.xst" -ofn "C:/Users/User/Documents/FPGA/FPA/Floating_Point_Sigmoid.syr" 

@@ -1,0 +1,34 @@
+Running: C:\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/User/Documents/FPGA/FPA/FPA_isim_beh.exe -prj C:/Users/User/Documents/FPGA/FPA/FPA_beh.prj work.FPA work.glbl 
+ISim P.49d (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/User/Documents/FPGA/FPA/Floating_Point_Multiplier.v" into library work
+Analyzing Verilog file "C:/Users/User/Documents/FPGA/FPA/Floating_Point_Power.v" into library work
+Analyzing Verilog file "C:/Users/User/Documents/FPGA/FPA/Floating_Point_Adder.v" into library work
+Analyzing Verilog file "C:/Users/User/Documents/FPGA/FPA/Floating_Point_Exponent.v" into library work
+Analyzing Verilog file "C:/Users/User/Documents/FPGA/FPA/Floating_Point_Div.v" into library work
+Analyzing Verilog file "C:/Users/User/Documents/FPGA/FPA/Floating_Point_Sigmoid.v" into library work
+Analyzing Verilog file "C:/Users/User/Documents/FPGA/FPA/forward.v" into library work
+Analyzing Verilog file "C:/Users/User/Documents/FPGA/FPA/FPA.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module Floating_Point_Adder
+Compiling module Floating_Point_Multiplier
+Compiling module Floating_Point_Power
+Compiling module Floating_Point_Power(POWER=3)
+Compiling module Floating_Point_Power(POWER=4)
+Compiling module Floating_Point_Power(POWER=5)
+Compiling module Floating_Point_Exponent
+Compiling module Floating_Point_Div
+Compiling module Floating_Point_Sigmoid
+Compiling module Forward
+Compiling module FPA
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 12 Verilog Units
+Built simulation executable C:/Users/User/Documents/FPGA/FPA/FPA_isim_beh.exe
+Fuse Memory Usage: 28832 KB
+Fuse CPU Usage: 421 ms

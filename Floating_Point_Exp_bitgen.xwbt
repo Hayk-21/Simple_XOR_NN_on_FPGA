@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\User\Documents\FPGA\FPA\Floating_Point_Exp.ncd
+OUTFILE=C:\Users\User\Documents\FPGA\FPA\Floating_Point_Exp.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\User\Documents\FPGA\FPA
+LICENSE=WebPack
+USER_INFO=__0_0_0

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/User/Documents/FPGA/FPA/FPA_isim_beh.exe" -prj "C:/Users/User/Documents/FPGA/FPA/FPA_beh.prj" "work.FPA" "work.glbl" 

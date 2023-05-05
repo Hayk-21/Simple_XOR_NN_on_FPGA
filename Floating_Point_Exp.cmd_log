@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/User/Documents/FPGA/FPA/Floating_Point_Exp.xst" -ofn "C:/Users/User/Documents/FPGA/FPA/Floating_Point_Exp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 Floating_Point_Exp.ngc Floating_Point_Exp.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Floating_Point_Exp_map.ncd Floating_Point_Exp.ngd Floating_Point_Exp.pcf 
+par -w -intstyle ise -ol high -mt off Floating_Point_Exp_map.ncd Floating_Point_Exp.ncd Floating_Point_Exp.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Floating_Point_Exp.twx Floating_Point_Exp.ncd -o Floating_Point_Exp.twr Floating_Point_Exp.pcf 
+bitgen -intstyle ise -f Floating_Point_Exp.ut Floating_Point_Exp.ncd 
