@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/User/Documents/FPGA/FPA/Floating_Point_Adder.v";
+static const char *ng0 = "C:/Users/LamerX/Documents/FPGA/Simple_XOR_NN_on_FPGA/Floating_Point_Adder.v";
 static unsigned int ng1[] = {1U, 0U};
 static unsigned int ng2[] = {0U, 0U};
 static int ng3[] = {24, 0};
@@ -643,10 +643,10 @@ LAB73:    t86 = (t0 + 4328);
     t9 = (~(t8));
     t10 = *((unsigned int *)t2);
     t60 = (t10 & t9);
-    t4 = (t0 + 7964);
+    t4 = (t0 + 8004);
     *((int *)t4) = t60;
 
-LAB76:    t5 = (t0 + 7964);
+LAB76:    t5 = (t0 + 8004);
     if (*((int *)t5) > 0)
         goto LAB77;
 
@@ -1097,7 +1097,7 @@ LAB83:    t34 = (t15 + 4);
         goto LAB84;
 
 LAB85:
-LAB86:    t2 = (t0 + 7964);
+LAB86:    t2 = (t0 + 8004);
     t60 = *((int *)t2);
     *((int *)t2) = (t60 - 1);
     goto LAB76;

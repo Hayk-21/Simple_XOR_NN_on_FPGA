@@ -29,18 +29,31 @@ INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on
 
 Data Sheet report:
 -----------------
-No constraints were found to generate data for the Data Sheet Report section.
-Use the Advanced Analysis (-a) option or generate global constraints for each
-clock, its pad to setup and clock to pad paths, and a pad to pad constraint.
+All values displayed in nanoseconds (ns)
 
-Analysis completed Tue Apr 25 14:16:28 2023 
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+pin_1          |seg<1>         |    7.093|
+pin_1          |seg<2>         |    7.100|
+pin_1          |seg<3>         |    7.254|
+pin_1          |seg<6>         |    7.341|
+pin_2          |seg<1>         |    7.211|
+pin_2          |seg<2>         |    7.218|
+pin_2          |seg<3>         |    7.372|
+pin_2          |seg<6>         |    7.459|
+---------------+---------------+---------+
+
+
+Analysis completed Wed May 31 00:24:56 2023 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4596 MB
+Peak Memory Usage: 4574 MB
 
 
 

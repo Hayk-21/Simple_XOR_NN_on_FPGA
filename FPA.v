@@ -24,7 +24,8 @@ module FPA(
 //   output reg [6:0] seg,
 //	output reg [3:0] an,
 //	output reg result
-	output [7:0] led
+	output reg [6:0] seg,
+	output reg [3:0] an
 );
 
 
@@ -60,33 +61,14 @@ always @(posedge clk) begin
 	end
 end 
 
-assign led = out[30:23];
-/*always @(posedge clk) begin
-	if (pin_1 & pin_2) begin
-		result <= 1'b1;
-	end
-	else if (~pin_1 & pin_2) begin
-		result <= 1'b0;
-	end	
-	else begin
-		result <= 1'b0;
-	end
-end	
-*/
-
-
-/*	
-	if (result) begin
-		seg = 7'b1001111;
-		an = 4'b1110;
-	end else begin
-		seg = 7'b0000001;
-		an = 4'b1110;
-	end
+wire xor_output;
+assign xor_output = pin_1 ^ pin_2;
+always @(*) begin
+	case (xor_output)
+		1'b0: seg <= 7'b0000001; // Display '0'
+		1'b1: seg <= 7'b1001111; // Display '1'
+		default: seg <= 7'b1111111; // Display nothing (off)
+	endcase
+	an <= 4'b1110;
 end
-*/
-
-//assign led_1 = pin_1;
-//assign led_2 = pin_2;
-
 endmodule

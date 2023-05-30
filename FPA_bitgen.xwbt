@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\User\Documents\FPGA\FPA\FPA.ncd
-OUTFILE=C:\Users\User\Documents\FPGA\FPA\FPA.bit
+INFILE=C:\Users\LamerX\Documents\FPGA\Simple_XOR_NN_on_FPGA\FPA.ncd
+OUTFILE=C:\Users\LamerX\Documents\FPGA\Simple_XOR_NN_on_FPGA\FPA.bit
 FAMILY=Spartan6
 PART=xc6slx16-3csg324
-WORKINGDIR=C:\Users\User\Documents\FPGA\FPA
+WORKINGDIR=C:\Users\LamerX\Documents\FPGA\Simple_XOR_NN_on_FPGA
 LICENSE=WebPack
 USER_INFO=__0_0_0

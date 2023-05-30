@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/User/Documents/FPGA/FPA/forward.v";
+static const char *ng0 = "C:/Users/LamerX/Documents/FPGA/Simple_XOR_NN_on_FPGA/forward.v";
 static unsigned int ng1[] = {1056283697U, 0U};
 static int ng2[] = {0, 0};
 static unsigned int ng3[] = {3197757985U, 0U};

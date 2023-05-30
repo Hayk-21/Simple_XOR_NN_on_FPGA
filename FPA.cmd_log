@@ -545,3 +545,12 @@ map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off FPA_map.ncd FPA.ncd FPA.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FPA.twx FPA.ncd -o FPA.twr FPA.pcf -ucf FPA.ucf 
 bitgen -intstyle ise -f FPA.ut FPA.ncd 
+xst -intstyle ise -ifn "C:/Users/LamerX/Documents/FPGA/Simple_XOR_NN_on_FPGA/FPA.xst" -ofn "C:/Users/LamerX/Documents/FPGA/Simple_XOR_NN_on_FPGA/FPA.syr" 
+xst -intstyle ise -ifn "C:/Users/LamerX/Documents/FPGA/Simple_XOR_NN_on_FPGA/FPA.xst" -ofn "C:/Users/LamerX/Documents/FPGA/Simple_XOR_NN_on_FPGA/FPA.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPA.ucf -p xc6slx16-csg324-3 FPA.ngc FPA.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPA.ucf -p xc6slx16-csg324-3 FPA.ngc FPA.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPA.ucf -p xc6slx16-csg324-3 FPA.ngc FPA.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o FPA_map.ncd FPA.ngd FPA.pcf 
+par -w -intstyle ise -ol high -mt off FPA_map.ncd FPA.ncd FPA.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml FPA.twx FPA.ncd -o FPA.twr FPA.pcf -ucf FPA.ucf 
+bitgen -intstyle ise -f FPA.ut FPA.ncd 

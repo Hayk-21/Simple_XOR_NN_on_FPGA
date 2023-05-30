@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    18:01:12 04/23/2023 
+// Create Date:    00:20:02 05/31/2023 
 // Design Name: 
 // Module Name:    Display 
 // Project Name: 
@@ -19,14 +19,9 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module Display (
-    input wire clk,
-    output reg [6:0] seg,
-    output reg [3:0] an
+	input btn_1, btn_2,
+
 );
 
-always @(posedge clk) begin
-    seg <= 7'b100_0000;
-    an <= 4'b1110;
-end
 
 endmodule

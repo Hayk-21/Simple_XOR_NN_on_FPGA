@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-05-05T02:36:44</DateModified>
+  <DateModified>2023-05-31T00:22:38</DateModified>
   <ModuleName>FPA</ModuleName>
   <SummaryTimeStamp>2023-04-23T18:52:11</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/User/Documents/FPGA/FPA/iseconfig/FPA.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/User/Documents/FPGA/FPA\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/LamerX/Documents/FPGA/Simple_XOR_NN_on_FPGA/iseconfig/FPA.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/LamerX/Documents/FPGA/Simple_XOR_NN_on_FPGA\</ImplementationReportsDirectory>
   <DateInitialized>2023-04-12T02:20:06</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

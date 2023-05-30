@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/User/Documents/FPGA/FPA/Floating_Point_Div.v";
+static const char *ng0 = "C:/Users/LamerX/Documents/FPGA/Simple_XOR_NN_on_FPGA/Floating_Point_Div.v";
 static unsigned int ng1[] = {0U, 0U};
 static unsigned int ng2[] = {0U, 4294967295U};
 static unsigned int ng3[] = {1U, 0U};

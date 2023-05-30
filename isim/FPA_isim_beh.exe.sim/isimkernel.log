@@ -2,27 +2,27 @@ Command line:
    FPA_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  52284
+     -socket  55614
 
-Tue Apr 25 13:48:16 2023
+Wed May 31 00:26:11 2023
 
 
- Elaboration Time: 0.015625 sec
+ Elaboration Time: 0.03125 sec
 
- Current Memory Usage: 5149.89 Meg
+ Current Memory Usage: 5149.97 Meg
 
- Total Signals          : 74
- Total Nets             : 1501
- Total Signal Drivers   : 55
+ Total Signals          : 75
+ Total Nets             : 1502
+ Total Signal Drivers   : 56
  Total Blocks           : 20
  Total Primitive Blocks : 12
- Total Processes        : 77
+ Total Processes        : 79
  Total Traceable Variables  : 201
- Total Scalar Nets and Variables : 6423
+ Total Scalar Nets and Variables : 6424
 
- Total Simulation Time: 0.015625 sec
+ Total Simulation Time: 0.140625 sec
 
- Current Memory Usage: 5149.89 Meg
+ Current Memory Usage: 4992.68 Meg
 
-Tue Apr 25 13:48:33 2023
+Wed May 31 00:27:19 2023
 

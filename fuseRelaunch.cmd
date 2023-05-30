@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/User/Documents/FPGA/FPA/FPA_isim_beh.exe" -prj "C:/Users/User/Documents/FPGA/FPA/FPA_beh.prj" "work.FPA" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/LamerX/Documents/FPGA/Simple_XOR_NN_on_FPGA/FPA_isim_beh.exe" -prj "C:/Users/LamerX/Documents/FPGA/Simple_XOR_NN_on_FPGA/FPA_beh.prj" "work.FPA" "work.glbl" 
