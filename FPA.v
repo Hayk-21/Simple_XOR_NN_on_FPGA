@@ -21,9 +21,6 @@
 module FPA(
    input pin_1, pin_2,
    input clk,
-//   output reg [6:0] seg,
-//	output reg [3:0] an,
-//	output reg result
 	output reg [6:0] seg,
 	output reg [3:0] an
 );

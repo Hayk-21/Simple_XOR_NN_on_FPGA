@@ -1,0 +1,63 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001d70f2a6530 .scope module, "adder_tb" "adder_tb" 2 1;
+ .timescale 0 0;
+P_000001d70f2730e0 .param/real "A" 0 2 4, Cr<m647ae147ae147c00gfc3>; value=3.14000
+P_000001d70f273118 .param/real "B" 0 2 5, Cr<m4eb851eb851eb800gfc2>; value=1.23000
+v000001d70f08eed0_0 .net *"_ivl_2", 63 0, L_000001d70f2a2600;  1 drivers
+v000001d70f272b20_0 .var/real "a", 0 0;
+v000001d70f2a24c0_0 .var/real "b", 0 0;
+v000001d70f2a2560_0 .net/real "sum", 0 0, v000001d70f272ef0_0;  1 drivers
+E_000001d70f08c7c0 .event posedge, L_000001d70f2a2600;
+L_000001d70f2a2600 .sfunc 2 28 "$time", "v64";
+S_000001d70f2a66c0 .scope module, "dut" "adder" 2 13, 3 1 0, S_000001d70f2a6530;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "sum";
+v000001d70f2a6850_0 .net/real "a", 0 0, v000001d70f272b20_0;  1 drivers
+v000001d70f272d60_0 .net/real "b", 0 0, v000001d70f2a24c0_0;  1 drivers
+v000001d70f272ef0_0 .var/real "sum", 0 0;
+E_000001d70f08c900 .event anyedge, v000001d70f2a6850_0, v000001d70f272d60_0;
+    .scope S_000001d70f2a66c0;
+T_0 ;
+    %wait E_000001d70f08c900;
+    %load/real v000001d70f2a6850_0;
+    %load/real v000001d70f272d60_0;
+    %add/wr;
+    %store/real v000001d70f272ef0_0;
+    %jmp T_0;
+    .thread T_0, $push;
+    .scope S_000001d70f2a6530;
+T_1 ;
+    %pushi/real 1685774663, 4067; load=3.14000
+    %pushi/real 2852127, 4045; load=3.14000
+    %add/wr;
+    %store/real v000001d70f272b20_0;
+    %pushi/real 1320702443, 4066; load=1.23000
+    %pushi/real 2181038, 4044; load=1.23000
+    %add/wr;
+    %store/real v000001d70f2a24c0_0;
+    %delay 10, 0;
+    %vpi_call 2 24 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_000001d70f2a6530;
+T_2 ;
+    %wait E_000001d70f08c7c0;
+    %vpi_call 2 29 "$strobe", "%f + %f = %f", v000001d70f272b20_0, v000001d70f2a24c0_0, v000001d70f2a2560_0 {0 0 0};
+    %jmp T_2;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "adder_tb.v";
+    "adder.v";
